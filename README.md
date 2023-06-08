@@ -3,6 +3,11 @@
 This is a boilerplate project repository for Vue.js v3.x sample plugin package.
 
 This project is created with NPM workspace feature. The sample plugin package is located under `packages\` folder.
+There are two packages under this project:
+
+- `packages/vue-sample-plugin`: a project for sample plugin
+- `packages/vue-app`: a project for sample app
+
 All tools for development are added to the `package.json` in the root folder.
 The following tools for dev are added:
 
@@ -15,7 +20,15 @@ The following tools for dev are added:
 - [Commitizen](https://commitizen-tools.github.io/commitizen/)
 - [git-cz](https://github.com/streamich/git-cz)
 
-## A sample Vue3 plugin project
+## Initialize root project
+
+Run the following commands to install package dependencies for development workspace.
+
+```shell
+npm install
+```
+
+## Sample plugin
 
 ### How to build
 
@@ -46,3 +59,5 @@ or
 ```shell
 npm run clean --workspaces
 ```
+
+## Sample app
