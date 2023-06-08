@@ -1,7 +1,11 @@
 <script setup lang="ts">
+  import { useMessage } from 'vue-sample-plugin'
+  import { useCounter } from 'vue-sample-plugin'
   defineProps<{
     msg: string
   }>()
+  const { message } = useMessage()
+  const { count, addCount } = useCounter()
 </script>
 
 <template>
@@ -12,6 +16,9 @@
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <div>
+      <button @click="addCount()">{{ message }}: {{ count }}</button>
+    </div>
   </div>
 </template>
 
