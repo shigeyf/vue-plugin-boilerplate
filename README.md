@@ -30,34 +30,56 @@ npm install
 
 ## Sample plugin
 
-### How to build
+### How to build a plugin
 
 Run the following commands to build package of Vue3 sample plugin.
 
 ```shell
-cd packages/vue-sample-plugin
-npm run build
+npm run build -w packages/vue-sample-plugin
 ```
 
-or
+or build all packages with the following command:
 
 ```shell
 npm run build --workspaces
 ```
 
-### How to clean a package
+### How to clean a sample plugin build
 
 Run the following commands to clean up.
 
 ```shell
-cd packages/vue-sample-plugin
-npm run clean
+npm run clean -w packages/vue-sample-plugin
 ```
 
-or
+or clean all package builds with the following command:
 
 ```shell
 npm run clean --workspaces
 ```
 
 ## Sample app
+
+### How to run a sample app with vite (for development)
+
+Run the following commands to build Vue3 sample app.
+
+```shell
+npm run dev -w packages/vue-app
+```
+
+### How to build a sample app
+
+Run the following commands to build Vue3 sample app.
+
+```shell
+npm run build -w packages/vue-app
+```
+
+### How to clean a sample app build
+
+Run the following commands to clean up.
+
+```shell
+npm run clean -w packages/vue-app
+```
